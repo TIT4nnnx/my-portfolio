@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suphakorn Komod - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Burger Menu Button -->
+    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="profile-section">
+                    <div class="profile-pic">
+                        <img src="assets/images/Me/me1.jpg" 
+                            alt="Suphakorn Komod" 
+                            class="profile-pic-zoom"
+                            data-image="assets/images/Me/me1.jpg">
+                    </div>
+                    <h2 class="name">Tike</h2>
+                </div>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="th">TH</button>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/Titanz7x/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tit4nzx_/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/TIT4nnnx" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <nav class="sidebar-nav">
+                    <a href="#home" class="nav-item active">
+                        <i class="fas fa-home"></i>
+                        <span data-i18n="home">Home</span>
+                    </a>
+                    <a href="#about" class="nav-item">
+                        <i class="fas fa-user"></i>
+                        <span data-i18n="about">About</span>
+                    </a>
+                    <a href="#skills" class="nav-item">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="skills">Technical Skills</span>
+                    </a>
+                    <a href="#education" class="nav-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="education">Education</span>
+                    </a>
+                    <a href="#experience" class="nav-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span data-i18n="experience">Experience</span>
+                    </a>
+                    <a href="#projects" class="nav-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span data-i18n="projects">Projects</span>
+                    </a>
+                    <a href="#contact" class="nav-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact">Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-image" ></div>
+                <div class="hero-overlay">
+                    <div class="hero-text">
+                        <h1>Suphakorn Komod</h1>
+                        <p data-i18n="heroSubtitle">Frontend & Full-Stack Developer</p>
+                        <span class="highlight-line"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <h2 data-i18n="aboutTitle">About</h2>
+                <p data-i18n="aboutText">Hello, my name is Suphakorn Komod, a recent Computer Engineering graduate from Chiang Mai University with a passion for frontend and full-stack web development. Experienced in building responsive and scalable web applications using modern technologies, with a strong interest in problem-solving and continuous learning.</p>
+
+                <div class="about-details">
+                    <div class="about-card">
+                        <h3 data-i18n="developerTitle">Frontend & Full-Stack Developer</h3>
+                        <p><em data-i18n="developerQuote">" Discipline will set you free without discipline
+                                                            You will be a slave to your passion and passion  "</em></p>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="name">Name :</span>
+                                <span class="detail-value" data-i18n="nameValue">Suphakorn Komod</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="nickname">Nickname :</span>
+                                <span class="detail-value" data-i18n="nicknameValue">Tike</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="birthday">Birthday :</span>
+                                <span class="detail-value" data-i18n="birthdayValue">9 Jan 2003</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="age">Age :</span>
+                                <span class="detail-value" id="age-value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="phone">Phone :</span>
+                                <span class="detail-value" data-i18n="phoneValue">0999 17 4451</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="degree">Degree :</span>
+                                <span class="detail-value" data-i18n="degreeValue">B.Eng Computer Engineering</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="city">City :</span>
+                                <span class="detail-value" data-i18n="cityValue">Chiang Mai, Mueang Chiang Mai</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="email">Email :</span>
+                                <span class="detail-value" data-i18n="emailValue">tiit4nzx@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="activities">Free time activities :</span>
+                                <span class="detail-value" data-i18n="activitiesValue">Play guitar, sing</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="personality">Personality :</span>
+                                <span class="detail-value" data-i18n="personalityValue">Quiet person</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="facebook">Facebook :</span>
+                                <span class="detail-value" data-i18n="facebookValue">Suphakorn Komod</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="github">Github :</span>
+                                <span class="detail-value" data-i18n="githubValue">TIT4nnnx</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills">
+                <h2 data-i18n="skillsTitle">Technical Skills</h2>
+
+                <div class="stack-groups">
+                    <div class="stack-group">
+                        <h4>Frontend</h4>
+                        <div class="stack-badges">
+                            <span class="badge badge-orange"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="badge badge-blue"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="badge badge-yellow"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="badge badge-ts"><i class="fab fa-js"></i> TypeScript</span>
+                            <span class="badge badge-vue"><i class="fab fa-vuejs"></i> Vue</span>
+                            <span class="badge badge-react"><i class="fab fa-react"></i> React</span>
+                            <span class="badge badge-angular"><i class="fab fa-angular"></i> Angular</span>
+                            <span class="badge badge-teal"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                            <span class="badge badge-purple"><i class="fab fa-figma"></i> Figma</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-group">
+                        <h4>Backend</h4>
+                        <div class="stack-badges">
+                            <span class="badge badge-node"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="badge badge-express"><i class="fas fa-server"></i> Express.js</span>
+                            <span class="badge badge-red"><i class="fab fa-laravel"></i> PHP Laravel</span>
+                            <span class="badge badge-java"><i class="fab fa-java"></i> Java</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-group">
+                        <h4>Database</h4>
+                        <div class="stack-badges">
+                            <span class="badge badge-mysql"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="badge badge-mongo"><i class="fas fa-leaf"></i> MongoDB</span>
+                            <span class="badge badge-db"><i class="fas fa-database"></i> Database Design</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-group">
+                        <h4>Tools</h4>
+                        <div class="stack-badges">
+                            <span class="badge badge-docker"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="badge badge-black"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="badge badge-git"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="badge badge-ux"><i class="fas fa-pencil-ruler"></i> UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="education">
+                <h2 data-i18n="educationTitle">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="schoolName">Phraowittayakom School</h3>
+                            <p class="period" data-i18n="schoolPeriod">2016 - 2022</p>
+                            <p data-i18n="schoolArea">Study area: Science, Math</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="universityName">Chiang Mai University</h3>
+                            <p class="period" data-i18n="universityPeriod">2022 - 2024</p>
+                            <p data-i18n="universityDegree">B.Eng Computer Engineering (Graduated)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience">
+                <h2 data-i18n="experienceTitle">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer - Webpage Scholarship</h3>
+                            <p class="period">Nov 2024 - 2025</p>
+                            <p class="company">Chiang Mai University's Faculty of Engineering</p>
+                            <p>Maintained and adding modernity for Webpage Scholarship of Faculty of Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects">
+                <h2 data-i18n="projectsTitle">Project / Experience</h2>
+                <p id="section-subtitle" class="section-subtitle" data-i18n="sectionSubtitle"></p>
+
+                <div class="projects-grid">
+
+                    <a href="https://261492-dernpa-project.vercel.app/" target="_blank" class="project-card">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/dernpa.png'); background-size: cover; background-position: center;"></div>
+                        <h3>Final project - Dernpa</h3>
+                        <p class="project-role">Role: Full Stack ( Vue3, Tailwind, Figma , Node.js , TypeScript )</p>
+                        <p>This hiking project makes everything related to hiking easier.</p>
+                    </a>
+
+                    <a href="https://github.com/SUPATKN/Art-and-Community" target="_blank" class="project-card">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/art-and-community.jpg'); background-size: cover; background-position: center;"></div>
+                        <h3>Web Application - Art and Community</h3>
+                        <p class="project-role">Role: Frontend ( React, Tailwind, Figma )</p>
+                        <p>A website about buying and selling and uploading photos taken or drawn by designing with Figma and writing various pages of the website.</p>
+                    </a>
+
+                    <a class="project-card" data-image="assets/images/Project-pic/rock-paper-scissors.jpg">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/rock-paper-scissors.jpg'); background-size: cover; background-position: center;"></div>
+                        <h3>Rock-Paper-Scissors Game by Logic Gates</h3>
+                        <p class="project-role">Role: Developer</p>
+                        <p>Design & connect logic gates (AND, OR, NOR, NOT, NAND) to build the game of Rock, Paper, Scissors.</p>
+                    </a>
+
+                    <a href="https://scratch.mit.edu/projects/734312017/" target="_blank" class="project-card">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/candy-saved-zombies.png'); background-size: cover; background-position: center;"></div>
+                        <h3>Candy Saved Zombies Game</h3>
+                        <p class="project-role">Role: Manager & Team Leader</p>
+                        <p>Design and plan, distribute work. A game about shooting zombies and collecting points, made from scratch program.</p>
+                    </a>
+
+                    <a href="https://github.com/touchtt0205/E-commerce-Laravel" target="_blank" class="project-card">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/e-commerce.jpg'); background-size: cover; background-position: center;"></div>
+                        <h3>E-Commerce Store</h3>
+                        <p class="project-role">Role: Frontend (PHP Laravel, Tailwind)</p>
+                        <p>A platform about buying and selling e-commerce by designing Figma and writing various pages of the website.</p>
+                    </a>
+
+                    <a href="https://github.com/SUPATKN/UPBEATProject_29" target="_blank" class="project-card">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/game-upbeat.jpg'); background-size: cover; background-position: center;"></div>
+                        <h3>Game Upbeat</h3>
+                        <p class="project-role">Role: Frontend & Backend (Java & React)</p>
+                        <p>Turn-based fighting game. Design the game page, develop the graphics and some backend functions.</p>
+                    </a>
+
+                    <a href="https://github.com/touchtt0205/Nucleus" target="_blank" class="project-card">
+                        <div class="project-image" style="background-image: url('assets/images/Project-pic/nucleus-project.jpg'); background-size: cover; background-position: center;"></div>
+                        <h3>Nucleus Project Software Engineering</h3>
+                        <p class="project-role">Role: Frontend (React, Tailwind, Figma)</p>
+                        <p>Workshop project for Holng Him Khaw tourist attractions. Responsive website to provide services to tourists and caretakers.</p>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <h2 data-i18n="contactTitle">Contact</h2>
+                <p class="contact-intro" data-i18n="contactIntro">Thank you for visiting my website. I hope we can work together.</p>
+                
+                <div class="contact-info-grid">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>176 Kiengdoi Place, Chang Phueak, Amphoe Mueang Chiang Mai, Chiang Mai 50300</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>0999 17 4451</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>tiit4nzx@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-facebook"></i>
+                        <p>Suphakorn Komod</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-instagram"></i>
+                        <p>tit4nxz_</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
